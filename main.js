@@ -1,5 +1,5 @@
 function Deck() {
-	// Object that holds the deck object.
+    // Object that holds the deck object.
     let cards = []  // container for all the cards the deck has
 }
 
@@ -26,15 +26,15 @@ Card.prototype.toString = function() {
 }
 
 Card.prototype.isHigher = function(otherCard) {
-	// Predicate to see if this card is
-	// higher than the otherCard
+    // Predicate to see if this card is
+    // higher than the otherCard
 }
 
 
 function Player() {
-	// The human player is going to play the game
-	// through the Player. It provides an interface to
-	// the players
+    // The human player is going to play the game
+    // through the Player. It provides an interface to
+    // the players
 }
 
 Player.prototype.check = function() {
@@ -50,25 +50,25 @@ Player.prototype.fold = function() {
 }
 
 Player.prototype.toString = function() {
-	// This is mainly for debugging purposes
+    // This is mainly for debugging purposes
 }
 
 function ComputerPlayer() {
-	// This should just extend Player prototype and 
-	// have a AI on top that peroforms the actions
+    // This should just extend Player prototype and 
+    // have a AI on top that peroforms the actions
 }
 
 function Game() {
-	// The object that manages game state
-	// Game is going to decide who
-	// wins and how much and all that stuff
+    // The object that manages game state
+    // Game is going to decide who
+    // wins and how much and all that stuff
 }
 
 function Dealer() {
-	// Poker doesn't really have an active dealer like blackjack
-	// Players could very well function as the dealer but having
-	// a seperate dealer will make things easier to deal with in the
-	// future
+    // Poker doesn't really have an active dealer like blackjack
+    // Players could very well function as the dealer but having
+    // a seperate dealer will make things easier to deal with in the
+    // future
 }
 
 
