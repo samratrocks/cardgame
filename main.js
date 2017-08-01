@@ -1,6 +1,28 @@
 function Deck() {
     // Object that holds the deck object.
-    let cards = []  // container for all the cards the deck has
+    this.cards = []  // container for all the cards the deck has
+
+    let suits = ['c', 'd', 'h', 's']
+    let ranks = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+
+    let clubsArray  = ranks.map((rank) => {
+        return rank + 'c'
+    })
+
+    let diamondsArray = ranks.map((rank) => {
+        return rank + 'd'
+    })
+
+    let heartsArray = ranks.map((rank) => {
+        return rank + 'h'
+    })
+
+    let spadesArray = ranks.map((rank) => {
+        return rank + 's'
+    })
+
+
+    this.cards = this.cards.concat(clubsArray).concat(diamondsArray).concat(heartsArray).concat(spadesArray)
 }
 
 Deck.prototype.shuffle = function() {
@@ -12,7 +34,10 @@ Deck.prototype.reset = function() {
 }
 
 Deck.prototype.deal = function(numberOfCardsToDeal) {
+    let firstCard = this.cards.pop()
+    let secondCard = this.cards.pop()
 
+    return [firstCard, secondCard]
 }
 
 
