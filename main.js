@@ -21,7 +21,6 @@ function Deck() {
         return rank + 's'
     })
 
-
     this.cards = this.cards.concat(clubsArray).concat(diamondsArray).concat(heartsArray).concat(spadesArray)
 }
 
@@ -41,19 +40,6 @@ Deck.prototype.deal = function(numberOfCardsToDeal) {
 }
 
 
-function Card(suit, rank) {
-    this.suit = suit
-    this.rank = rank
-}
-
-Card.prototype.toString = function() {
-    console.log(`${rank} ${suit}`)
-}
-
-Card.prototype.isHigher = function(otherCard) {
-    // Predicate to see if this card is
-    // higher than the otherCard
-}
 
 
 function Player() {
@@ -94,6 +80,11 @@ function Dealer() {
     // Players could very well function as the dealer but having
     // a seperate dealer will make things easier to deal with in the
     // future
+}
+
+Dealer.prototype.winningHand(firstHand, secondHand, communityCards) {
+    // Input: firstHand, secondHand, communityCards
+    // Output: {}
 }
 
 
