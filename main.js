@@ -25,11 +25,19 @@ function Deck() {
 }
 
 Deck.prototype.shuffle = function() {
-
+    // NOTE: I could probably get away with having an array of 
+    //  52 numbers and randomizing them and then using that 
+    //  as an index while dealing
+    //  Another way to deal with this would be to have an array of 
+    //  randomized 52 numbers and create a new array using that as 
+    //  a guide to index. The second solution sounds a bit better, 
+    //  since following the first one would have it spill outside 
+    //  of the function.
 }
 
 Deck.prototype.reset = function() {
-
+    // Resets the deck to the initial position. It's like
+    // getting a fresh new deck that's unshuffled and uncut.
 }
 
 Deck.prototype.deal = function(numberOfCardsToDeal) {
@@ -45,7 +53,7 @@ Deck.prototype.deal = function(numberOfCardsToDeal) {
 function Player() {
     // The human player is going to play the game
     // through the Player. It provides an interface to
-    // the players
+    // the players to interact with the game.
 }
 
 Player.prototype.check = function() {
@@ -73,6 +81,12 @@ function Game() {
     // The object that manages game state
     // Game is going to decide who
     // wins and how much and all that stuff
+    // INFO: This is a Texas Holdem game heads up 
+    //  poker game
+
+    // The Game decides whose turn it is. And will accept actions 
+    // from the Object. It'll send a message that'll contain an object with the
+    // game's history up to that point 
 }
 
 function Dealer() {
@@ -84,7 +98,8 @@ function Dealer() {
 
 Dealer.prototype.winningHand(firstHand, secondHand, communityCards) {
     // Input: firstHand, secondHand, communityCards
-    // Output: {}
+    // Output: {String: winningHand, String: handValue}
+    // 
 }
 
 
