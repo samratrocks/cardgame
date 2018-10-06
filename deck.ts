@@ -9,13 +9,7 @@ export class Deck {
             '1s', '2s', '3s', '4s', '5s', '6s', '7s', '8s', '9s', '10s', '11s', '12s', '13s',
         ]
     }
-
-    /**
-     * Shuffle
-     * params:
-     *
-     * return:
-     */
+    
     public shuffle() {
         // Create a new deck of 52 cards
     }
